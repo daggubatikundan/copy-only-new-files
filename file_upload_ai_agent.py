@@ -4,9 +4,9 @@ from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright
 
 # --- CONFIGURATION ---
-NETWORK_LOCATION = r'\\suh-msi-app\ARCHIVE1'  # Use raw string (r) for Windows paths
+NETWORK_LOCATION = r'\\suh-msi-app\MicroMD\ARCHIVE1'  # Use raw string (r) for Windows paths
 APP_URL = "https://app.rivethealth.com/..." # Replace with your specific Rivet URL
-FILE_EXTENSIONS = ('.835', '.837')
+FILE_EXTENSIONS = ('.txt', '.270', '.ANS', '.2', '.3', '.4', '.5', '.6', '.7', '.8', '.9', '.10', '.11', '.12', '.13', '.14', '.15', '.16', '.17', '.18', '.19', '.20', '.21', '.22', '.23', '.24', '.25', '.26', '.27', '.28', '.29', '.30', '.31', '.32', '.33', '.34', '.35', '.36', '.37', '.38', '.39', '.40', '.41', '.42', '.43', '.44', '.45', '.46', '.47', '.48', '.49', '.50', '.51', '.52', '.53', '.54', '.55', '.56', '.57', '.58', '.59', '.60', '.61', '.62', '.63', '.64', '.65', '.66', '.67', '.68', '.69', '.70', '.71', '.72', '.73', '.74')  # Add more as needed
 
 def get_weekly_files(directory):
     """Returns a list of file paths generated in the last 7 days."""
